@@ -401,9 +401,9 @@ export default function App() {
           </div>
         </section>
 
-        <section className=”closing-card”>
+        <section className="closing-card">
           <div>
-            <p className=”dark-eyebrow”>Why SafeStep Matters</p>
+            <p className="dark-eyebrow">Why SafeStep Matters</p>
             <h2>Safety planning should be private, personal, and always within reach</h2>
             <p>
               SafeStep was built around one insight: the most dangerous moment for a survivor is the planning phase, not the moment of leaving.
@@ -411,30 +411,30 @@ export default function App() {
             </p>
           </div>
 
-          <div className=”card-grid two-up”>
-            <div className=”closing-mini-card”>
-              <div className=”icon-box dark-icon-box”>
+          <div className="card-grid two-up">
+            <div className="closing-mini-card">
+              <div className="icon-box dark-icon-box">
                 <Users size={18} />
               </div>
               <h3>Who benefits?</h3>
               <p>Domestic violence survivors - especially those on shared or monitored devices - who need a discreet, personalized planning tool that does not look like one.</p>
             </div>
-            <div className=”closing-mini-card”>
-              <div className=”icon-box dark-icon-box”>
+            <div className="closing-mini-card">
+              <div className="icon-box dark-icon-box">
                 <Target size={18} />
               </div>
               <h3>What changes?</h3>
               <p>Survivors get a personalized, AI-generated exit plan in minutes instead of navigating generic hotline scripts or visible shelter directories that could be discovered by an abuser.</p>
             </div>
-            <div className=”closing-mini-card”>
-              <div className=”icon-box dark-icon-box”>
+            <div className="closing-mini-card">
+              <div className="icon-box dark-icon-box">
                 <Layers3 size={18} />
               </div>
               <h3>Why this build?</h3>
               <p>The decoy interface, local-only storage, and Supabase-proxied AI calls were chosen specifically to minimize digital exposure. No server stores survivor data - ever.</p>
             </div>
-            <div className=”closing-mini-card”>
-              <div className=”icon-box dark-icon-box”>
+            <div className="closing-mini-card">
+              <div className="icon-box dark-icon-box">
                 <Rocket size={18} />
               </div>
               <h3>What is next?</h3>
