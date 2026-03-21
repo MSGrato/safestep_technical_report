@@ -101,7 +101,7 @@ export const projectData: ProjectPageData = {
   ],
 
   links: [
-    { label: 'Live Demo', url: 'https://github.com/MSGrato/safe-step', primary: true },
+    { label: 'Live Demo', url: 'https://safe-step-tool.lovable.app/', primary: true },
     { label: 'GitHub Repo', url: 'https://github.com/MSGrato/safe-step' },
     { label: 'Slides', url: '/project-assets/final-slides.pptx' },
   ],
