@@ -191,7 +191,7 @@ export default function App() {
             title="Screenshots and Demos"
             description="Live screenshots from the deployed app at safe-step-tool.lovable.app."
           />
-          <div className="card-grid two-up">
+          <div className="card-grid three-up">
             {projectData.gallery.map((item) =>
               item.assetPath ? (
                 <div key={item.title} className="surface gallery-card">

@@ -355,6 +355,10 @@ h1, h2, h3, .instruction-title, .card-heading h3, .section-header h2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.card-grid.three-up {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .metrics-grid {
   margin-top: 1.5rem;
 }
@@ -749,7 +753,8 @@ h1, h2, h3, .instruction-title, .card-heading h3, .section-header h2 {
   .metrics-grid,
   .meta-grid,
   .method-grid,
-  .card-grid.two-up {
+  .card-grid.two-up,
+  .card-grid.three-up {
     grid-template-columns: 1fr;
   }
 

@@ -121,7 +121,7 @@ export const projectData: ProjectPageData = {
   metrics: [
     { label: 'Team', value: '4 students', note: 'Anushka Chougule, Li Huai, Miranda Grato, Rithvik Ravi' },
     { label: 'Core User', value: 'DV survivors', note: 'Especially those on shared or monitored devices' },
-    { label: 'Decoy Skins', value: '3', note: 'Recipe App, Notes App, Weather App' },
+    { label: 'Decoy Skins', value: '3', note: 'Discreet, functioning UIs' },
     { label: 'Intake Questions', value: '5', note: 'Children, finances, documents, contacts, timeline' },
   ],
 
@@ -146,11 +146,6 @@ export const projectData: ProjectPageData = {
   ],
 
   gallery: [
-    {
-      title: 'Decoy Interface - Recipe App',
-      caption: 'SafeStep hides behind a convincing decoy UI. Users choose their disguise during onboarding. A discreet gesture reveals the real interface without leaving any visible trace.',
-      assetPath: '/project-assets/decoy-recipe.png',
-    },
     {
       title: 'Safety Plan Checklist',
       caption: 'Claude generates a personalized 8-item exit checklist based on intake answers. Users check off items as they complete them - 2 of 8 shown here - with progress saved locally. A disclaimer reminds users this is a starting point, not legal advice.',
