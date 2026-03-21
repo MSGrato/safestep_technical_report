@@ -146,19 +146,19 @@ export const projectData: ProjectPageData = {
 
   gallery: [
     {
-      title: 'Decoy Interface',
-      caption: 'SafeStep hides behind a normal-looking app. Users choose their disguise during onboarding - recipe, notes, or weather. Triple-tapping the app title reveals the real interface.',
-      assetPath: '/project-assets/example-screen.png',
+      title: 'Decoy Interface - Recipe App',
+      caption: 'SafeStep hides behind a convincing recipe app. Users choose their disguise during onboarding. Triple-tapping the app title reveals the real interface without leaving any visible trace.',
+      assetPath: '/project-assets/decoy-recipe.png',
     },
     {
-      title: 'AI Safety Plan',
-      caption: 'After completing a 5-question intake, Claude generates a personalized, prioritized exit checklist. Users can check off items as they complete them, with progress tracked locally.',
-      placeholder: 'Add a screenshot of the intake form and the generated checklist',
+      title: 'Safety Plan Intake',
+      caption: 'A 5-question intake collects situational details one at a time - children, finances, documents, trusted contacts, and timeline. Claude uses these answers to generate a personalized exit checklist.',
+      assetPath: '/project-assets/intake-question.png',
     },
     {
-      title: 'Resource Lookup and Chat',
-      caption: 'Entering a ZIP code surfaces nearby shelters, legal aid, and counselors via Google Places. The AI chat uses the safety plan and resource results as context for personalized support.',
-      placeholder: 'Add a screenshot of the resources tab and chat interface',
+      title: 'Resource Lookup',
+      caption: 'Entering a ZIP code surfaces nearby shelters, legal aid, and counseling services via Google Places. Results include address and a direct Google Maps link. A persistent DV Hotline card always appears at the top.',
+      assetPath: '/project-assets/resources-tab.png',
     },
   ],
 
