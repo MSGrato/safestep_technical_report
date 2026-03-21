@@ -94,10 +94,11 @@ export const projectData: ProjectPageData = {
     'SafeStep is a privacy-first mobile web app that helps domestic violence survivors create a personalized exit plan without raising suspicion on a shared or monitored device. The app disguises itself as a recipe, notes, or weather app on the home screen - a triple-tap reveals the real interface. From there, a 5-question intake drives the Claude API to generate a tailored, prioritized safety checklist. A Google Places integration surfaces nearby shelters, legal aid, and counselors by ZIP code. A context-aware streaming AI chat provides ongoing support with a hard crisis override that routes to 911 or the National DV Hotline when users indicate immediate danger. Every design decision - the decoy screen, local-only storage, quick exit button, and safety check gate - was built around the specific threat model a survivor faces.',
 
   instructions: [
-    'Replace every bracketed placeholder with project-specific content.',
-    'Drop screenshots, PDFs, diagrams, or photos into public/project-assets and reference them here.',
-    'Add or remove cards by editing arrays in this file instead of rewriting the page layout.',
-    'Keep the executive summary concise, but make the stack, methods, feature cards, and architecture specific and concrete.',
+    'Download the app and choose a decoy skin during onboarding - recipe, notes, or weather - that matches your normal phone habits.',
+    'Triple-tap the app title at any time to reveal the real SafeStep interface. The same gesture returns you to the decoy.',
+    'Complete the 5-question intake to generate your personalized AI safety plan. Your answers never leave your device.',
+    'Use the Resources tab to find nearby shelters, legal aid, and counseling by entering your ZIP code.',
+    'Tap the Quick Exit button at any time to instantly return to the decoy screen and hide your session.',
   ],
 
   links: [

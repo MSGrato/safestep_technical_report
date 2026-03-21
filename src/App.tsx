@@ -91,8 +91,8 @@ export default function App() {
               <FileText size={22} />
             </div>
             <div>
-              <p className="instruction-title">How students should use this page</p>
-              <p className="instruction-subtitle">Fill in the content, keep the overall layout and pacing.</p>
+              <p className="instruction-title">How to use SafeStep</p>
+              <p className="instruction-subtitle">A privacy-first safety planning tool designed for survivors on monitored devices.</p>
             </div>
           </div>
 
@@ -401,44 +401,44 @@ export default function App() {
           </div>
         </section>
 
-        <section className="closing-card">
+        <section className=”closing-card”>
           <div>
-            <p className="dark-eyebrow">Closing Section</p>
-            <h2>End with a clear business case</h2>
+            <p className=”dark-eyebrow”>Why SafeStep Matters</p>
+            <h2>Safety planning should be private, personal, and always within reach</h2>
             <p>
-              The strongest project pages do not stop at “here is our interface.” They explain why the idea matters,
-              how the system is built, what evidence exists today, and what should happen next.
+              SafeStep was built around one insight: the most dangerous moment for a survivor is the planning phase, not the moment of leaving.
+              Every feature - the decoy app, local-only storage, one-tap exit, and AI-generated checklist - exists to reduce risk during that window.
             </p>
           </div>
 
-          <div className="card-grid two-up">
-            <div className="closing-mini-card">
-              <div className="icon-box dark-icon-box">
+          <div className=”card-grid two-up”>
+            <div className=”closing-mini-card”>
+              <div className=”icon-box dark-icon-box”>
                 <Users size={18} />
               </div>
               <h3>Who benefits?</h3>
-              <p>State the user, customer, or stakeholder group in plain language.</p>
+              <p>Domestic violence survivors - especially those on shared or monitored devices - who need a discreet, personalized planning tool that does not look like one.</p>
             </div>
-            <div className="closing-mini-card">
-              <div className="icon-box dark-icon-box">
+            <div className=”closing-mini-card”>
+              <div className=”icon-box dark-icon-box”>
                 <Target size={18} />
               </div>
               <h3>What changes?</h3>
-              <p>Explain the operational, financial, or human outcome the project improves.</p>
+              <p>Survivors get a personalized, AI-generated exit plan in minutes instead of navigating generic hotline scripts or visible shelter directories that could be discovered by an abuser.</p>
             </div>
-            <div className="closing-mini-card">
-              <div className="icon-box dark-icon-box">
+            <div className=”closing-mini-card”>
+              <div className=”icon-box dark-icon-box”>
                 <Layers3 size={18} />
               </div>
               <h3>Why this build?</h3>
-              <p>Call out the architecture or approach choices that make the solution credible.</p>
+              <p>The decoy interface, local-only storage, and Supabase-proxied AI calls were chosen specifically to minimize digital exposure. No server stores survivor data - ever.</p>
             </div>
-            <div className="closing-mini-card">
-              <div className="icon-box dark-icon-box">
+            <div className=”closing-mini-card”>
+              <div className=”icon-box dark-icon-box”>
                 <Rocket size={18} />
               </div>
               <h3>What is next?</h3>
-              <p>Name the next test, launch step, or milestone that turns the prototype into a stronger product.</p>
+              <p>Multilingual support, a trained advocate review mode for AI-generated plans, and a native iOS and Android app with biometric unlock to reach survivors beyond the browser.</p>
             </div>
           </div>
         </section>
