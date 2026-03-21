@@ -152,6 +152,11 @@ export const projectData: ProjectPageData = {
       assetPath: '/project-assets/decoy-recipe.png',
     },
     {
+      title: 'Safety Plan Checklist',
+      caption: 'Claude generates a personalized 8-item exit checklist based on intake answers. Users check off items as they complete them - 2 of 8 shown here - with progress saved locally. A disclaimer reminds users this is a starting point, not legal advice.',
+      assetPath: '/project-assets/safety-plan-checklist.png',
+    },
+    {
       title: 'Safety Plan Intake',
       caption: 'A 5-question intake collects situational details one at a time - children, finances, documents, trusted contacts, and timeline. Claude uses these answers to generate a personalized exit checklist.',
       assetPath: '/project-assets/intake-question.png',
@@ -160,11 +165,6 @@ export const projectData: ProjectPageData = {
       title: 'Resource Lookup',
       caption: 'Entering a ZIP code surfaces nearby shelters, legal aid, and counseling services via Google Places. Results include address and a direct Google Maps link. A persistent DV Hotline card always appears at the top.',
       assetPath: '/project-assets/resources-tab.png',
-    },
-    {
-      title: 'AI-Generated Safety Plan',
-      caption: 'Claude generates a personalized 8-item exit checklist based on intake answers. Users check off items as they complete them - 2 of 8 shown here - with progress saved locally. A disclaimer reminds users this is a starting point, not legal advice.',
-      assetPath: '/project-assets/safety-plan-checklist.png',
     },
   ],
 
