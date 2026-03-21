@@ -84,23 +84,15 @@ export interface ProjectPageData {
   risks: RiskItem[];
 }
 
-// Students: this is the main file you should edit.
-// Replace every bracketed placeholder with real content.
-// Put screenshots, PDFs, and diagrams in public/project-assets/.
-// In most cases, you do not need to edit App.tsx or styles.css.
-
 export const projectData: ProjectPageData = {
-  // This slug is useful later if the project is imported back into foster-ai-hub.
-  slug: '[project-slug]',
+  slug: 'safestep',
 
-  // Basic page identity
-  title: '[Project Title]',
-  subtitle: '[One sharp sentence that explains what your team is building and for whom.]',
-  ownerLine: '[Team Name or Student Names]',
+  title: 'SafeStep',
+  subtitle: 'AI-powered safety planning for domestic violence survivors, hidden inside an ordinary-looking app.',
+  ownerLine: 'MSIS 522 Team 3 - Anushka Chougule, Li Huai, Miranda Grato, Rithvik Ravi',
   executiveSummary:
-    '[Write a crisp executive summary here. Explain the business context, the user, the core workflow, and why this project matters in one paragraph.]',
+    'SafeStep is a privacy-first mobile web app that helps domestic violence survivors create a personalized exit plan without raising suspicion on a shared or monitored device. The app disguises itself as a recipe, notes, or weather app on the home screen - a triple-tap reveals the real interface. From there, a 5-question intake drives the Claude API to generate a tailored, prioritized safety checklist. A Google Places integration surfaces nearby shelters, legal aid, and counselors by ZIP code. A context-aware streaming AI chat provides ongoing support with a hard crisis override that routes to 911 or the National DV Hotline when users indicate immediate danger. Every design decision - the decoy screen, local-only storage, quick exit button, and safety check gate - was built around the specific threat model a survivor faces.',
 
-  // Short instruction cards shown near the top of the page
   instructions: [
     'Replace every bracketed placeholder with project-specific content.',
     'Drop screenshots, PDFs, diagrams, or photos into public/project-assets and reference them here.',
@@ -108,146 +100,237 @@ export const projectData: ProjectPageData = {
     'Keep the executive summary concise, but make the stack, methods, feature cards, and architecture specific and concrete.',
   ],
 
-  // Main action buttons / links
   links: [
-    { label: 'Live Tool', url: 'https://example.com', primary: true },
-    { label: 'Demo Recording', url: 'https://example.com/demo' },
-    { label: 'GitHub Repo', url: 'https://github.com/your-team/your-project' },
+    { label: 'Live Demo', url: 'https://github.com/MSGrato/safe-step', primary: true },
+    { label: 'GitHub Repo', url: 'https://github.com/MSGrato/safe-step' },
     { label: 'Slides PDF', url: '/project-assets/final-slides.pdf' },
-    { label: 'Technical Report', url: '/project-assets/report.pdf' },
   ],
 
-  // Quick tags shown under the summary
-  badges: ['[React]', '[TypeScript]', '[Supabase]', '[OpenAI API]', '[Figma]', '[n8n / LangGraph / MCP]'],
+  badges: ['React', 'TypeScript', 'Supabase', 'Claude API', 'Google Places API', 'Tailwind CSS', 'shadcn-ui'],
 
-  // Short keywords that help when this project is added to a larger gallery later.
-  keywords: ['[keyword-1]', '[keyword-2]', '[keyword-3]'],
+  keywords: ['domestic violence', 'safety planning', 'AI', 'privacy', 'decoy interface', 'trauma-informed'],
 
-  // Methods shown in the solution section and methods section
-  methods: ['[Prompt chaining]', '[RAG]', '[Human-in-the-loop review]', '[Rapid prototyping]'],
+  methods: [
+    'Prompt engineering for trauma-informed tone',
+    'Supabase Edge Functions as AI proxy layer',
+    'Server-Sent Events (SSE) for streaming chat',
+    'Local-only storage for survivor privacy',
+  ],
 
-  // Small summary cards near the top
   metrics: [
-    { label: 'Team', value: '[3-5 students]', note: 'List names and roles below' },
-    { label: 'Core User', value: '[User Segment]', note: 'Who the experience is designed for' },
+    { label: 'Team', value: '4 students', note: 'Anushka Chougule, Li Huai, Miranda Grato, Rithvik Ravi' },
+    { label: 'Core User', value: 'DV survivors', note: 'Especially those on shared or monitored devices' },
+    { label: 'Decoy Skins', value: '3', note: 'Recipe App, Notes App, Weather App' },
+    { label: 'Intake Questions', value: '5', note: 'Children, finances, documents, contacts, timeline' },
   ],
 
-  // Problem / solution
   problemStatement:
-    '[Describe the pain point in concrete terms. Who experiences it, how often, what it costs them, and why current solutions fall short.]',
-  solutionSummary:
-    '[Describe the product or system your team is building. Explain the main interaction, the AI or automation role, and the value users get from it.]',
-  audience: '[Primary users, buyers, or stakeholders]',
-  impactGoal: '[What outcome will improve if this succeeds? Revenue, speed, trust, accuracy, retention, access, etc.]',
-  status: '[Prototype / Pilot / Live Tool / Research Concept]',
+    '1 in 4 women and 1 in 9 men in the US experience domestic violence. The most dangerous moment is planning to leave - when abusers are most likely to retaliate. Existing tools such as hotlines, shelter directories, and generic checklists are not discreet, not personalized, and not safe to use on a monitored device.',
 
-  // Team members
+  solutionSummary:
+    'SafeStep hides behind a user-chosen decoy app (recipe, notes, or weather). A triple-tap anywhere on the decoy title reveals the real interface, where a 5-question AI-powered intake generates a personalized exit checklist via Claude, a ZIP-based resource lookup surfaces nearby shelters and legal aid via Google Places, and a trauma-informed AI chat provides ongoing support. One tap on the quick-exit button returns to the decoy and clears visible session state instantly.',
+
+  audience: 'Domestic violence survivors, especially those on shared or monitored devices',
+
+  impactGoal:
+    'Reduce the risk of detection while planning to leave by giving survivors a safe, personalized, and always-accessible planning tool that fits inside an ordinary-looking app.',
+
+  status: 'Prototype',
+
   members: [
-    { name: '[Student Name]', role: '[Role or Function]', focus: '[What this person owned]' },
-    { name: '[Student Name]', role: '[Role or Function]', focus: '[What this person owned]' },
-    { name: '[Student Name]', role: '[Role or Function]', focus: '[What this person owned]' },
+    { name: 'Anushka Chougule', role: 'AI and Prompts', focus: 'Claude API integration and trauma-informed system prompt design' },
+    { name: 'Li Huai', role: 'Full Stack', focus: 'Supabase Edge Functions and backend architecture' },
+    { name: 'Miranda Grato', role: 'Frontend', focus: 'React UI, decoy skins, and onboarding flow' },
+    { name: 'Rithvik Ravi', role: 'Research and Ethics', focus: 'DV advocate review, Anthropic high-risk compliance, and resources integration' },
   ],
 
-  // Gallery cards
-  // To use a real image, put the file in public/project-assets/ and set assetPath.
   gallery: [
     {
-      title: 'Hero Screenshot',
-      caption: '[Show the main interface or most impressive moment of the product.]',
-      assetPath: '/project-assets/example-screen.png',
+      title: 'Decoy Interface',
+      caption: 'SafeStep hides behind a normal-looking app. Users choose their disguise during onboarding - recipe, notes, or weather. Triple-tapping the app title reveals the real interface.',
+      placeholder: 'Add a screenshot of the decoy screen and the real interface side by side',
     },
     {
-      title: 'Workflow or Architecture',
-      caption: '[Show how the system works behind the scenes.]',
-      placeholder: 'Add a system diagram, workflow slide, or whiteboard export',
+      title: 'AI Safety Plan',
+      caption: 'After completing a 5-question intake, Claude generates a personalized, prioritized exit checklist. Users can check off items as they complete them, with progress tracked locally.',
+      placeholder: 'Add a screenshot of the intake form and the generated checklist',
     },
     {
-      title: 'Evidence of Validation',
-      caption: '[Include user testing photos, before/after comparisons, sample outputs, or evaluation charts.]',
-      placeholder: 'Add proof that the idea works or is promising',
+      title: 'Resource Lookup and Chat',
+      caption: 'Entering a ZIP code surfaces nearby shelters, legal aid, and counselors via Google Places. The AI chat uses the safety plan and resource results as context for personalized support.',
+      placeholder: 'Add a screenshot of the resources tab and chat interface',
     },
   ],
 
-  // Technical stack
   stack: [
     {
       category: 'Frontend and Experience',
-      tools: ['[React]', '[Next.js / Vite]', '[Tailwind CSS or CSS]', '[Figma]'],
-      note: '[How you designed and shipped the interface.]',
+      tools: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'shadcn-ui', 'Lucide React'],
+      note: 'Mobile-first layout with fixed bottom navigation and large touch targets. Three fully functional decoy skins (RecipeApp, NotesApp, WeatherApp) built as standalone React components. A custom useTripleTap hook handles the gesture reveal.',
     },
     {
-      category: 'AI, Logic, and Orchestration',
-      tools: ['[OpenAI API]', '[LangGraph / n8n / custom workflow]', '[Prompt patterns]', '[Evaluation setup]'],
-      note: '[How intelligence, prompting, and agentic behavior work.]',
+      category: 'AI and Orchestration',
+      tools: ['Claude API (Anthropic)', 'Supabase Edge Functions', 'Server-Sent Events (SSE)', 'Trauma-informed system prompts'],
+      note: 'All Claude API calls are proxied through Supabase Edge Functions so API keys never reach the client. The safety-plan function returns a line-separated checklist. The chat function streams token-by-token via SSE with a hard crisis override: if the user indicates immediate danger, Claude responds only with hotline and 911 information.',
     },
     {
       category: 'Data, Backend, and Integrations',
-      tools: ['[Supabase / Firebase / Postgres]', '[APIs]', '[Auth]', '[Storage]'],
-      note: '[Where data lives and what external systems connect.]',
+      tools: ['Supabase', 'Google Places API', 'Browser localStorage', 'No server-side user data'],
+      note: 'User data - intake answers, checklist progress, chat history, resource results - is stored only in the local browser via localStorage. Google Places is also proxied through a Supabase Edge Function. There is no user account or remote database storing survivor information.',
     },
   ],
 
-  // Feature cards
   features: [
     {
-      title: '[Feature or Flow Name]',
-      description: '[Explain what this part of the experience does and why it matters.]',
-      highlights: ['[Key interaction]', '[AI behavior]', '[What makes it different]'],
+      title: 'Decoy Interface with Triple-Tap Reveal',
+      description: 'Users pick a disguise during onboarding - recipe, notes, or weather app. The decoy renders as a full, convincing standalone app. A custom useTripleTap hook listens for three taps within 500ms to trigger the mode switch. Before entering the real interface, a safety check screen confirms the user is safe and offers the DV Hotline number.',
+      highlights: [
+        'Three fully built decoy skins: RecipeApp, NotesApp, WeatherApp',
+        'Triple-tap gesture via custom React hook with configurable 500ms timeout',
+        'Safety check gate with one-tap access to National DV Hotline (1-800-799-7233)',
+      ],
     },
     {
-      title: '[Feature or Flow Name]',
-      description: '[Explain another important piece of the product.]',
-      highlights: ['[Key interaction]', '[Automation or insight]', '[User value]'],
+      title: 'AI-Powered Personalized Safety Plan',
+      description: 'A 5-question intake collects situational details: whether children are involved, financial access, document availability, trusted contacts, and planned timeline. These answers are injected into a trauma-informed system prompt using build_safety_prompt(), which Claude uses to generate a 6-8 item prioritized exit checklist. The checklist is interactive and all progress is saved locally.',
+      highlights: [
+        '5-question sequential intake with visual step progress indicator',
+        'Supabase Edge Function safety-plan calls Claude with context-filled prompt',
+        'Interactive checklist with local persistence and item-level completion tracking',
+      ],
     },
     {
-      title: '[Feature or Flow Name]',
-      description: '[Explain a third area such as admin tools, analytics, onboarding, or evaluation.]',
-      highlights: ['[What happens]', '[How it is implemented]', '[Why it matters]'],
+      title: 'ZIP-Based Resource Lookup',
+      description: 'Users enter their ZIP code to search for nearby shelters, legal aid offices, and counseling services. The frontend calls a Supabase Edge Function that queries Google Places for each of the three resource types. Results render as categorized cards with address and a Google Maps link. A persistent National DV Hotline card always appears regardless of search results.',
+      highlights: [
+        'Three parallel resource searches: shelter, legal aid, counseling',
+        'Google Places API proxied through Supabase Edge Function',
+        'Persistent crisis hotline card always visible at the top',
+      ],
+    },
+    {
+      title: 'Trauma-Informed Streaming AI Chat',
+      description: 'The chat tab provides an ongoing support channel powered by Claude. The assistant receives the intake answers, current checklist, and resource results as context so responses are personalized. Responses stream line-by-line via SSE. A safety banner reminds users to call 911 for immediate danger, and if the message indicates imminent risk, the system prompt overrides Claude to respond only with crisis resources.',
+      highlights: [
+        'SSE streaming for real-time token-by-token response display',
+        'Context injection: intake answers + checklist items + places results',
+        'Hard crisis override: immediate danger triggers hotline-only response',
+      ],
+    },
+    {
+      title: 'Quick Exit and Local-Only Privacy Model',
+      description: 'A persistent quick-exit button on the real interface returns the user to the decoy app in a single tap and clears visible session state immediately. All user data is stored only in localStorage with no server-side copy. A reset option in settings wipes all data and returns to onboarding with a two-step confirmation.',
+      highlights: [
+        'One-tap quick exit back to decoy with session state cleared from view',
+        'All sensitive data in localStorage only - no server copy exists',
+        'Full data wipe with two-step confirmation in settings',
+      ],
     },
   ],
 
-  // Architecture walkthrough
   architecture: [
-    { title: 'Input Layer', description: '[What data, files, prompts, or actions enter the system?]' },
-    { title: 'Reasoning Layer', description: '[How does the AI retrieve context, classify, rank, or generate output?]' },
-    { title: 'Decision Layer', description: '[What rules, guardrails, approvals, or workflow logic shape behavior?]' },
-    { title: 'Output Layer', description: '[What does the user receive: a plan, interface state, report, alert, or recommendation?]' },
+    {
+      title: 'Input Layer',
+      description: 'Six-step onboarding collects decoy skin preference and privacy policy acceptance. The 5-question intake form captures children, finances, documents, trusted contacts, and timeline. The resources tab accepts a ZIP code. The chat tab accepts free-text messages. No raw user data leaves the device - only anonymized API payloads reach Supabase Edge Functions.',
+    },
+    {
+      title: 'AI Orchestration Layer',
+      description: 'All external API calls go through Supabase Edge Functions. The safety-plan function fills a structured system prompt with intake data and calls Claude to generate the checklist. The chatbot function injects full survivor context and streams Claude responses via SSE. The places function queries Google Places for three resource categories and returns structured results.',
+    },
+    {
+      title: 'Safety and Decision Layer',
+      description: 'Three hard guardrails: (1) the SafetyCheckScreen gate blocks entry to the real interface until the user confirms they are safe or is routed to crisis resources; (2) the Claude chatbot system prompt includes a mandatory override rule that limits responses to crisis contacts when immediate danger is detected; (3) the quick-exit button and local-only storage ensure no session data is exposed on an unattended device.',
+    },
+    {
+      title: 'Output Layer',
+      description: 'The safety plan renders as an interactive checklist with per-item completion state. The resources tab shows categorized place cards with address and Google Maps links. The chat renders streaming markdown responses with distinct user and assistant bubbles. All output is persisted locally and fully wiped on reset.',
+    },
   ],
 
-  // Optional code snippet area
-  // Keep this short. One or two examples is usually enough.
   codeHighlights: [
     {
-      title: 'Example code snippet',
+      title: 'Trauma-Informed Prompt Builder (Python)',
+      language: 'python',
+      note: 'build_safety_prompt() fills a structured Claude system prompt with intake data, defaulting missing fields to "unknown" rather than omitting context. The prompt instructs Claude to use calm, non-judgmental language, produce a 6-8 item prioritized checklist, and include child-safety items only when relevant.',
+      code: `def build_safety_prompt(intake_data: dict) -> str:
+    children  = intake_data.get("children", "unknown")
+    finances  = intake_data.get("finances", "unknown")
+    documents = intake_data.get("documents", "unknown")
+    contacts  = intake_data.get("contacts", "unknown")
+    timeline  = intake_data.get("timeline", "unknown")
+
+    return SAFETY_PLAN_PROMPT.format(
+        children=children,
+        finances=finances,
+        documents=documents,
+        contacts=contacts,
+        timeline=timeline,
+    )`,
+    },
+    {
+      title: 'Triple-Tap Reveal Hook (TypeScript)',
       language: 'ts',
-      note: 'Paste one or two small code snippets here if they help explain the build.',
-      code: `export async function runWorkflow(input: string) {
-  const result = await orchestrator.plan(input);
-  return result;
+      note: 'useTripleTap tracks the last N tap timestamps in a ref. If three taps occur within the timeout window, the toggle callback fires. This lets SafeStep stay hidden behind a decoy with a gesture that looks like an accidental mis-tap.',
+      code: `export function useTripleTap(onTripleTap: () => void, timeout = 500) {
+  const taps = useRef<number[]>([]);
+
+  return useCallback(() => {
+    const now = Date.now();
+    taps.current = [...taps.current, now].filter(t => now - t < timeout);
+    if (taps.current.length >= 3) {
+      taps.current = [];
+      onTripleTap();
+    }
+  }, [onTripleTap, timeout]);
 }`,
     },
   ],
 
-  // Roadmap
   roadmap: [
     {
       phase: 'Now',
-      items: ['[What the prototype does today]', '[What evidence or assets you already have]', '[Any current limitations to be aware of]'],
+      items: [
+        'Three decoy skins: recipe, notes, weather - with triple-tap reveal',
+        'AI safety plan generated from 5-question intake via Claude API',
+        'ZIP-based resource lookup for shelters, legal aid, and counseling via Google Places',
+        'Streaming trauma-informed chat with hard crisis override',
+        'Quick exit button and local-only privacy model with full data wipe',
+      ],
     },
     {
       phase: 'Next',
-      items: ['[Most important improvement]', '[What you would validate with more time]', '[A feature that meaningfully increases value]'],
+      items: [
+        'Multilingual support - Spanish, Mandarin, and additional languages',
+        'Advocate review mode - trained DV counselors verify AI-generated plans before delivery',
+        'Native iOS and Android app with biometric unlock (Face ID and fingerprint)',
+      ],
     },
     {
       phase: 'Later',
-      items: ['[Scale-up opportunity]', '[Partnership, data, or business model opportunity]', '[Longer-term product vision]'],
+      items: [
+        'Anonymized outcome tracking to improve AI safety plan recommendations over time',
+        'Partnership with DV organizations to build a verified advocate review network',
+        'Expanded resource database with real-time shelter availability and capacity data',
+      ],
     },
   ],
 
-  // Risks and constraints
   risks: [
-    { title: '[Risk or Constraint]', mitigation: '[How your team manages or reduces this risk.]' },
-    { title: '[Risk or Constraint]', mitigation: '[How your team manages or reduces this risk.]' },
-    { title: '[Risk or Constraint]', mitigation: '[How your team manages or reduces this risk.]' },
+    {
+      title: 'Stalkerware and Device Monitoring',
+      mitigation: 'The decoy interface and quick exit reduce casual discovery, but app-level protection cannot defeat dedicated monitoring software. Users are warned during onboarding to use a trusted device. No data is stored server-side, limiting exposure from remote access tools.',
+    },
+    {
+      title: 'AI Is Not a Substitute for Professional Counseling',
+      mitigation: 'The Claude system prompt explicitly forbids legal or medical advice and clinical jargon. Every plan includes a disclaimer recommending local DV advocates. The chat crisis override routes to 911 or the National Hotline the moment immediate danger is detected.',
+    },
+    {
+      title: 'Trauma-Informed Language and Anthropic Compliance',
+      mitigation: 'System prompts were designed against trauma-informed communication guidelines and reviewed for appropriateness. The project follows Anthropic high-risk use case requirements including AI disclosure, a planned human advocate review mode, and a response flagging mechanism built into the chat UI.',
+    },
+    {
+      title: 'Resource Data Accuracy',
+      mitigation: 'Google Places data can be outdated or incomplete. A persistent National DV Hotline card always appears regardless of search results. Future versions will supplement Places data with verified shelter databases maintained by DV organizations.',
+    },
   ],
 };
