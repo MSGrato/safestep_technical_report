@@ -139,10 +139,10 @@ export const projectData: ProjectPageData = {
   status: 'Prototype',
 
   members: [
-    { name: 'Anushka Chougule', role: 'AI and Prompts', focus: 'Claude API integration and trauma-informed system prompt design' },
-    { name: 'Li Huai', role: 'Full Stack', focus: 'Supabase Edge Functions and backend architecture' },
-    { name: 'Miranda Grato', role: 'Frontend', focus: 'React UI, decoy skins, and onboarding flow' },
-    { name: 'Rithvik Ravi', role: 'Research and Ethics', focus: 'DV advocate review, Anthropic high-risk compliance, and resources integration' },
+    { name: 'Anushka Chougule', role: 'Testing and Demo', focus: 'End-to-end testing, demo preparation, and quality assurance across all app flows' },
+    { name: 'Li Huai', role: 'Full Stack', focus: 'Supabase Edge Functions, backend architecture, Anthropic API integration, and Google Places API integration' },
+    { name: 'Miranda Grato', role: 'Frontend and Prompts', focus: 'React UI, decoy skins, onboarding flow, Claude prompt engineering, and trauma-informed prompt design' },
+    { name: 'Rithvik Ravi', role: 'Presentation and Production', focus: 'Slide deck, production deployment, and technical reporting details' },
   ],
 
   gallery: [
