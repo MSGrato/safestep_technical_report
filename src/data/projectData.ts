@@ -91,11 +91,11 @@ export const projectData: ProjectPageData = {
   subtitle: 'AI-powered safety planning for domestic violence survivors, hidden inside an ordinary-looking app.',
   ownerLine: 'MSIS 522 Team 3 - Anushka Chougule, Li Huai, Miranda Grato, Rithvik Ravi',
   executiveSummary:
-    'SafeStep is a privacy-first mobile web app that helps domestic violence survivors create a personalized exit plan without raising suspicion on a shared or monitored device. The app disguises itself as a recipe, notes, or weather app on the home screen - a triple-tap reveals the real interface. From there, a 5-question intake drives the Claude API to generate a tailored, prioritized safety checklist. A Google Places integration surfaces nearby shelters, legal aid, and counselors by ZIP code. A context-aware streaming AI chat provides ongoing support with a hard crisis override that routes to 911 or the National DV Hotline when users indicate immediate danger. Every design decision - the decoy screen, local-only storage, quick exit button, and safety check gate - was built around the specific threat model a survivor faces.',
+    'SafeStep is a privacy-first mobile web app that helps domestic violence survivors create a personalized exit plan without raising suspicion on a shared or monitored device. The app disguises itself as one of three decoy UIs on the home screen - a discreet gesture reveals the real interface. From there, a 5-question intake drives the Claude API to generate a tailored, prioritized safety checklist. A Google Places integration surfaces nearby shelters, legal aid, and counselors by ZIP code. A context-aware streaming AI chat provides ongoing support with a hard crisis override that routes to 911 or the National DV Hotline when users indicate immediate danger. Every design decision - the decoy screen, local-only storage, quick exit button, and safety check gate - was built around the specific threat model a survivor faces.',
 
   instructions: [
-    'Download the app and choose a decoy skin during onboarding - recipe, notes, or weather - that matches your normal phone habits.',
-    'Triple-tap the app title at any time to reveal the real SafeStep interface. The same gesture returns you to the decoy.',
+    'Download the app and choose from three decoy UIs during onboarding - pick whichever matches your normal phone habits.',
+    'Use a discreet gesture at any time to reveal the real SafeStep interface. The same gesture returns you to the decoy.',
     'Complete the 5-question intake to generate your personalized AI safety plan. Your answers never leave your device.',
     'Use the Resources tab to find nearby shelters, legal aid, and counseling by entering your ZIP code.',
     'Tap the Quick Exit button at any time to instantly return to the decoy screen and hide your session.',
@@ -129,7 +129,7 @@ export const projectData: ProjectPageData = {
     '1 in 4 women and 1 in 9 men in the US experience domestic violence. The most dangerous moment is planning to leave - when abusers are most likely to retaliate. Existing tools such as hotlines, shelter directories, and generic checklists are not discreet, not personalized, and not safe to use on a monitored device.',
 
   solutionSummary:
-    'SafeStep hides behind a user-chosen decoy app (recipe, notes, or weather). A triple-tap anywhere on the decoy title reveals the real interface, where a 5-question AI-powered intake generates a personalized exit checklist via Claude, a ZIP-based resource lookup surfaces nearby shelters and legal aid via Google Places, and a trauma-informed AI chat provides ongoing support. One tap on the quick-exit button returns to the decoy and clears visible session state instantly.',
+    'SafeStep hides behind a user-chosen decoy UI. A discreet gesture reveals the real interface, where a 5-question AI-powered intake generates a personalized exit checklist via Claude, a ZIP-based resource lookup surfaces nearby shelters and legal aid via Google Places, and a trauma-informed AI chat provides ongoing support. One tap on the quick-exit button returns to the decoy and clears visible session state instantly.',
 
   audience: 'Domestic violence survivors, especially those on shared or monitored devices',
 
@@ -148,7 +148,7 @@ export const projectData: ProjectPageData = {
   gallery: [
     {
       title: 'Decoy Interface - Recipe App',
-      caption: 'SafeStep hides behind a convincing recipe app. Users choose their disguise during onboarding. Triple-tapping the app title reveals the real interface without leaving any visible trace.',
+      caption: 'SafeStep hides behind a convincing decoy UI. Users choose their disguise during onboarding. A discreet gesture reveals the real interface without leaving any visible trace.',
       assetPath: '/project-assets/decoy-recipe.png',
     },
     {
@@ -172,7 +172,7 @@ export const projectData: ProjectPageData = {
     {
       category: 'Frontend and Experience',
       tools: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'shadcn-ui', 'Lucide React'],
-      note: 'Mobile-first layout with fixed bottom navigation and large touch targets. Three fully functional decoy skins (RecipeApp, NotesApp, WeatherApp) built as standalone React components. A custom useTripleTap hook handles the gesture reveal.',
+      note: 'Mobile-first layout with fixed bottom navigation and large touch targets. Three fully functional decoy UIs built as standalone React components. A custom hook handles the discreet gesture reveal.',
     },
     {
       category: 'AI and Orchestration',
@@ -188,11 +188,11 @@ export const projectData: ProjectPageData = {
 
   features: [
     {
-      title: 'Decoy Interface with Triple-Tap Reveal',
-      description: 'Users pick a disguise during onboarding - recipe, notes, or weather app. The decoy renders as a full, convincing standalone app. A custom useTripleTap hook listens for three taps within 500ms to trigger the mode switch. Before entering the real interface, a safety check screen confirms the user is safe and offers the DV Hotline number.',
+      title: 'Decoy Interface with Discreet Gesture Reveal',
+      description: 'Users pick one of three decoy UIs during onboarding. The decoy renders as a full, convincing standalone app. A custom gesture hook triggers the mode switch. Before entering the real interface, a safety check screen confirms the user is safe and offers the DV Hotline number.',
       highlights: [
-        'Three fully built decoy skins: RecipeApp, NotesApp, WeatherApp',
-        'Triple-tap gesture via custom React hook with configurable 500ms timeout',
+        'Three fully built decoy UIs as standalone React components',
+        'Discreet gesture reveal via custom React hook',
         'Safety check gate with one-tap access to National DV Hotline (1-800-799-7233)',
       ],
     },
@@ -296,7 +296,7 @@ export const projectData: ProjectPageData = {
     {
       phase: 'Now',
       items: [
-        'Three decoy skins: recipe, notes, weather - with triple-tap reveal',
+        'Three decoy UIs with discreet gesture reveal',
         'AI safety plan generated from 5-question intake via Claude API',
         'ZIP-based resource lookup for shelters, legal aid, and counseling via Google Places',
         'Streaming trauma-informed chat with hard crisis override',
