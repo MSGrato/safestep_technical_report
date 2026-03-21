@@ -124,7 +124,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Problem</p>
-                <h3>What problem are you trying to solve?</h3>
+                <h3>The Problem</h3>
               </div>
             </div>
             <p className="body-copy">{projectData.problemStatement}</p>
@@ -151,7 +151,7 @@ export default function App() {
               </div>
               <div>
                 <p className="dark-eyebrow">Solution</p>
-                <h3>What are you building?</h3>
+                <h3>The Solution</h3>
               </div>
             </div>
             <p className="dark-copy">{projectData.solutionSummary}</p>
@@ -168,8 +168,8 @@ export default function App() {
         <section>
           <SectionHeader
             eyebrow="Team"
-            title="Show who built it and what each person owned"
-            description="This section should read like a real team build, not just a list of names. Make ownership specific."
+            title="Meet the Team"
+            description="Four MSIS students across AI, full-stack, frontend, and research - each with a distinct ownership area."
           />
           <div className="card-grid two-up">
             {projectData.members.map((member) => (
@@ -188,8 +188,8 @@ export default function App() {
         <section>
           <SectionHeader
             eyebrow="Gallery"
-            title="Add screenshots, diagrams, evidence, and visual proof"
-            description="Students can place screenshots, diagrams, PDFs, or photos inside public/project-assets and reference them from the data file."
+            title="Screenshots and Demos"
+            description="Live screenshots from the deployed app at safe-step-tool.lovable.app."
           />
           <div className="card-grid two-up">
             {projectData.gallery.map((item) =>
@@ -223,7 +223,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Stack</p>
-                <h3>Make the stack easy to scan</h3>
+                <h3>Technical Stack</h3>
               </div>
             </div>
             <div className="stack-list">
@@ -253,7 +253,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Methods</p>
-                <h3>Call out the techniques quickly</h3>
+                <h3>Key Methods</h3>
               </div>
             </div>
             <div className="method-grid">
@@ -275,8 +275,8 @@ export default function App() {
         <section>
           <SectionHeader
             eyebrow="Product"
-            title="Break the experience into feature cards"
-            description="Each card should explain what the user does, what the system does, and what concrete value the interaction creates."
+            title="Key Features"
+            description="Five core features - each built around the specific safety needs of survivors on monitored devices."
           />
           <div className="card-grid two-up">
             {projectData.features.map((feature) => (
@@ -307,7 +307,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Architecture</p>
-                <h3>Explain how the system works</h3>
+                <h3>System Architecture</h3>
               </div>
             </div>
             <div className="architecture-list">
@@ -330,7 +330,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Code Highlights</p>
-                <h3>Paste short code samples if they help</h3>
+                <h3>Code Highlights</h3>
               </div>
             </div>
             <div className="code-list">
@@ -360,7 +360,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Roadmap</p>
-                <h3>Show momentum and next steps</h3>
+                <h3>Roadmap</h3>
               </div>
             </div>
             <div className="roadmap-list">
@@ -387,7 +387,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Risks</p>
-                <h3>Be honest about constraints</h3>
+                <h3>Risks and Constraints</h3>
               </div>
             </div>
             <div className="risk-list">
