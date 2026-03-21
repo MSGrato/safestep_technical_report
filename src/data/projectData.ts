@@ -103,7 +103,7 @@ export const projectData: ProjectPageData = {
   links: [
     { label: 'Live Demo', url: 'https://github.com/MSGrato/safe-step', primary: true },
     { label: 'GitHub Repo', url: 'https://github.com/MSGrato/safe-step' },
-    { label: 'Slides PDF', url: '/project-assets/final-slides.pdf' },
+    { label: 'Slides', url: '/project-assets/final-slides.pptx' },
   ],
 
   badges: ['React', 'TypeScript', 'Supabase', 'Claude API', 'Google Places API', 'Tailwind CSS', 'shadcn-ui'],
@@ -148,7 +148,7 @@ export const projectData: ProjectPageData = {
     {
       title: 'Decoy Interface',
       caption: 'SafeStep hides behind a normal-looking app. Users choose their disguise during onboarding - recipe, notes, or weather. Triple-tapping the app title reveals the real interface.',
-      placeholder: 'Add a screenshot of the decoy screen and the real interface side by side',
+      assetPath: '/project-assets/example-screen.png',
     },
     {
       title: 'AI Safety Plan',
