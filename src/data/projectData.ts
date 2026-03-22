@@ -89,7 +89,7 @@ export const projectData: ProjectPageData = {
 
   title: 'SafeStep',
   subtitle: 'AI-powered safety planning for domestic violence survivors, hidden inside an ordinary-looking app.',
-  ownerLine: 'MSIS 522 Team 3 - Anushka Chougule, Li Huai, Miranda Grato, Rithvik Ravi',
+  ownerLine: 'Anushka Chougule · Li Huai · Miranda Grato · Rithvik Ravi · Team Project',
   executiveSummary:
     'SafeStep is a privacy-first mobile web app that helps domestic violence survivors create a personalized exit plan without raising suspicion on a shared or monitored device. The app disguises itself as one of three decoy UIs on the home screen - a discreet gesture reveals the real interface. From there, a 5-question intake drives the Claude API to generate a tailored, prioritized safety checklist. A Google Places integration surfaces nearby shelters, legal aid, and counselors by ZIP code. A context-aware streaming AI chat provides ongoing support with a hard crisis override that routes to 911 or the National DV Hotline when users indicate immediate danger. Every design decision - the decoy screen, local-only storage, quick exit button, and safety check gate - was built around the specific threat model a survivor faces.',
 
